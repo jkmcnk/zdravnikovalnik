@@ -3,10 +3,10 @@
     <script language="JavaScript">
       <!--
 function kolkZdravnikov(){
-  document.converter.zdravniki.value = Math.round(document.converter.eur.value / 2.54 * 10)/10
+  document.converter.zdravniki.value = Math.round(document.converter.eur.value / 2125 * 10)/10
 }
 function kolkEurov(){
-  document.converter.eur.value = Math.round(document.converter.zdravniki.value * 2.54 * 10)/10
+  document.converter.eur.value = Math.round(document.converter.zdravniki.value * 2125 * 10)/10
 }
 //-->
     </script>
@@ -41,7 +41,7 @@ function kolkEurov(){
             <td class="L">EUR</td><td class="I"><input class="form" type="text" name="eur" onChange="kolkZdravnikov()" max-length="8" size="8"></td><br/>
           </tr>
           <tr>
-            <td class="L">Zdravniki</td><td class="I"><input class="form" type="text" name="zdravniki" onChange="kolkEurov()" max-length="4" size="8"></td>
+            <td class="L">Mladi zdravniki</td><td class="I"><input class="form" type="text" name="zdravniki" onChange="kolkEurov()" max-length="4" size="8"></td>
           </tr>
       </form>
     </div>
